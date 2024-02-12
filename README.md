@@ -3,9 +3,9 @@
 ##What should be installed first
 1. Visual Studio 2022 or [VSCode](https://code.visualstudio.com/docs/languages/dotnet) 
 2. .NET 8.0  
-##Installation
+## Installation
    Docker support will be soon
-###Manually
+### Manually
 1. To run this project you need to install and configure [Admin panel](https://github.com/Zacky3181V/admin-panel) first. Please follow the link and instructions  
 2. Clone this repository using git or manually downloading an archive
    ```
