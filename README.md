@@ -1,6 +1,6 @@
 # Store written on ASP.NET core
 ![WSIiZ](https://moodle.wsiz.edu.pl/pluginfile.php/1/theme_alpha/customlogotopbar/1707397324/wsiz-favicon.png)  
-##What should be installed first
+## What should be installed first
 1. Visual Studio 2022 or [VSCode](https://code.visualstudio.com/docs/languages/dotnet) 
 2. .NET 8.0  
 ## Installation
