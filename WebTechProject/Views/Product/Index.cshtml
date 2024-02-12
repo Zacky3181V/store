@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    var data = ViewBag.Message;
+    int featured = 0;
+    foreach(var item in data)
+    {
+        if (item.IsFeatured)
+        {
+            featured += 1;
+        }
+    }
+}
+<header class="bg-black py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Jameson products</h1>
+            <p class="lead fw-normal text-white-50 mb-0 ">Find your favourite</p>
+        </div>
+    </div>
+</header>
+
+<h1 class="fw-bolder pt-3">Featured (@featured)</h1>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5 border-bottom">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            
+                @{
+                    foreach(var item in data)
+                    {
+                        if (item.IsFeatured)
+                        {
+                            
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="@item.Images[0].url" /> 
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">
+                                            @item.Name
+                                        </h5>
+                                        <span>Category: @item.Category.name</span><br />
+                                        <span>Price: $@item.Price </span><br />
+                                        <span>@item.Size.name (@item.Size.value) </span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-dark mt-auto" onclick="Toast()">
+                                            Add to cart
+                                        </button>
+                                        <a class="btn btn-outline-success mt-auto" href="https://www.buymeacoffee.com/zacky3181v">
+                                            Order
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                        
+                    }
+                }
+            
+        </div>
+    </div>
+    
+</section>
+
+<h1 class="fw-bolder pt-3">All products (@data.Count)</h1>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            
+                @{
+                    foreach (var item in data)
+                    {
+                    <div class="col mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="@item.Images[0].url" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">
+                                            @item.Name
+                                        </h5>
+                                        <span>Category: @item.Category.name</span><br />
+                                        <span>Price: $@item.Price </span><br />
+                                        <span>@item.Size.name (@item.Size.value) </span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-dark mt-auto" onclick="Toast()">
+                                            Add to cart
+                                        </button>
+                                    <a class="btn btn-outline-success mt-auto" href="https://www.buymeacoffee.com/zacky3181v" >
+                                            Order
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    }
+                }
+            
+        </div>
+    </div>
+
+</section>
+
+<div class="toast-container">
+    <div class="toast bg-success" id="EpicToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; top: 20px; right: 20px;">
+        <div class="toast-header ">
+            <strong class="mr-auto">Success</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-white">
+            Item added to the cart
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "d+SLCp2fecjP6+Cu2k4svGYrmywlWGsK45mhXsbc1/xKK9XihXfnGNZaY+bYh28M6rIz2PCcAgCIe9cIvEUotQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daniyar\\source\\repos\\WebTechProject\\ApiTest\\ApiTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniyar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

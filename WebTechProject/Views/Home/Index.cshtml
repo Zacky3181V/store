@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var image = ViewBag.Message;
+}
+
+<div class="text-center">
+    <div class="container pb-4">
+        <img src="@image.ImageUrl" alt="juice image" class="w-75 h-50 rounded img-fluid" />
+    </div>
+    <a href="/Product" class="btn btn-success mb-2">Order now</a>
+    <div class="pb-2 border-bottom">
+        <h2 class="pb-3">Our services</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="icons/parking-svgrepo-com.svg" class="svg"/>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/wifi-svgrepo-com.svg" class="svg"/>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/garden-fance-gardening-svgrepo-com.svg" class="svg"/>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    Parking
+                </div>
+                <div class="col-sm">
+                    Free Wifi
+                </div>
+                <div class="col-sm">
+                    Garden seats
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pb-2 border-bottom">
+        <h2 class="pt-4 pb-5">Payment methods</h2>
+        <div class="container">
+            <div class="row pb-3 justify-content-center">
+                <div class="col-sm">
+                    <img src="icons/visa-svgrepo-com.svg" class="svg"/>
+                </div>
+
+                <div class="col-sm">
+                    <img src="icons/mastercard-svgrepo-com.svg" class="svg"/>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/cash-svgrepo-com.svg" class="svg"/>
+                </div>
+                <div class="col-sm">
+                    <img src="icons/bank-svgrepo-com.svg" class="svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm pb-1">
+                Visa
+            </div>
+            <div class="col-sm pb-1">
+                Mastercard
+            </div>
+            <div class="col-sm pb-1">
+                Cash
+            </div>
+            <div class="col-sm pb-1">
+                BLIK
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <h2 class="pt-4">Working hours</h2>
+        <div class="container">
+            <div class="row py-3 border-bottom border-dark">
+                <div class="col border-end">
+                    <h3><strong>Monday</strong></h3>
+                </div>
+                <div class="col border-start border-dark">
+                    <h3><strong>14:00 - 02:00</strong></h3>
+                </div>
+            </div>
+            
+            <div class="row py-3 border-bottom border-dark">
+                <div class="col border-end">
+                    <h3><strong>Tuesday - Saturday</strong></h3>
+                </div>
+                <div class="col border-start border-dark">
+                    <h3><strong>14:00 - 04:00</strong></h3>
+                </div>
+            </div>
+            
+            <div class="row py-3 border-dark">
+                <div class="col border-end k">
+                    <h3><strong>Sunday</strong></h3>
+                </div>
+                <div class="col border-start border-dark">
+                    <h3><strong>16:00 - 02:00</strong></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
